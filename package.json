@@ -1,0 +1,20 @@
+{
+  "name": "yearbook-spotify-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gen_playlist.js",
+  "scripts": {
+    "redirect": "bash run_server.sh",
+    "auth": "node access_token_gen.js",
+    "playlist": "node gen_playlist.js",
+    "gencode": "node gen_spotify_code.js"
+  },
+  "author": "Filbert Cia",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "csv-parse": "^5.3.0",
+    "sleep": "^6.3.0",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
